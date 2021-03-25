@@ -1,4 +1,4 @@
-# Аналог википедии WIKIBOOKS
+# Аналог википедии OnlineCyclopedia
 
 
 ## Email для связи: ekaterin-2015@bk.ru
