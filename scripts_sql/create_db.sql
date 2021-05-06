@@ -1,4 +1,3 @@
-/*DROP DATABASE wiki;*/
 CREATE DATABASE wiki;
 USE wiki;
 
