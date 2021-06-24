@@ -1,0 +1,166 @@
+body{
+  opacity: 0;
+  transition: 2.3s opacity ease-in-out;
+}
+
+.body_visible {
+	opacity: 1;
+}
+
+.title{
+  text-align: center;
+}
+
+.orders{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Proxima Nova Regular';
+}
+
+.box h2{
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 85%;
+  align-items: center;
+  padding: 0 40px 20px;
+  margin-bottom: 50px;
+}
+
+.box:nth-child(odd){
+  border-bottom: 2px #175fa8 solid;
+}
+
+.box:nth-child(even){
+  border-bottom: 2px #d14351 solid;
+}
+
+.box img{
+  max-height: 170px;
+}
+
+.box ul{
+  margin-top: 35px;
+}
+
+.box li{
+  list-style-type: none;
+  padding: 1px;
+}
+
+.box li:hover{
+  font-weight: 600;
+}
+
+.info{
+  flex-basis: 30%;
+}
+
+.about{
+  flex-basis: 49.5%;
+}
+
+.about p{
+  text-align: center;
+}
+
+.about h4{
+  margin-block-start: 0em;
+  margin-block-end: 5px;
+  padding-inline-start: 0px;
+  text-align: center;
+}
+
+
+
+
+/* Оформление ссылки */
+
+.box nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: black;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.box nav a:hover,
+.box nav a:focus {
+	outline: none;
+  font-weight: 600;
+}
+
+.box a {
+	padding: 10px 20px;
+	height: 45px;
+}
+
+.box a::before,
+.box a::after {
+	position: absolute;
+	width: 45px;
+	height: 2px;
+	background: #175fa8;
+	content: '';
+	opacity: 0.4;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	pointer-events: none;
+}
+
+.box a::before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.box a::after {
+	right: 0;
+	bottom: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+.box a:hover::before,
+.box a:hover::after,
+.box a:focus::before,
+.box a:focus::after {
+  width: 70px;
+	opacity: 1;
+}
+
+.box a:hover::before,
+.box a:focus::before {
+	left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+
+.box a:hover::after,
+.box a:focus::after {
+	right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
+}

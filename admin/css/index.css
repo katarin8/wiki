@@ -1,0 +1,143 @@
+.container{
+  font-family: 'Proxima Nova Regular';
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header img{
+  max-width: 250px;
+}
+
+.header h1{
+  margin-block-start: 0em;
+  margin-block-end: 5px;
+  padding-inline-start: 0px;
+}
+
+.codes{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.codes input[type=number]{
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #d9d9d9;
+  padding: 5px 10px 5px 20px;
+}
+
+
+.codes input[type=submit]{
+  outline: none!important;
+  border: none;
+  background: 0 0;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 25px;
+  background-color: #175fa8;
+  margin-left: 10px;
+  transition: 0.7s;
+}
+
+.codes input[type=submit]:hover{
+  background-color: #d14351;
+  -webkit-box-shadow: 0px 0px 15px 8px rgba(209, 67, 81, 0.2);
+-moz-box-shadow: 0px 0px 15px 8px rgba(209, 67, 81, 0.2);
+box-shadow: 0px 0px 15px 8px rgba(209, 67, 81, 0.2);
+}
+
+.codes h4{
+  margin-block-start: 0em;
+  margin-block-end: 5px;
+  padding-inline-start: 0px;
+}
+
+.allbox{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box{
+  width: 30%;
+  text-align: center;
+  margin: 7px 3px;
+  padding: 20px 0;
+}
+
+.box h2{
+  margin-block-start: 0em;
+  margin-block-end: 5px;
+  padding-inline-start: 0px;
+}
+
+.box h4{
+  margin-block-start: 0em;
+  margin-block-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.box:nth-child(odd){
+  border-top: 1px #175fa8 solid;
+  border-bottom: 1px #d14351 solid;
+}
+
+.box:nth-child(even){
+  border-bottom: 1px #175fa8 solid;
+  border-top: 1px #d14351 solid;
+}
+
+.box p{
+  margin-block-start: 0em;
+}
+
+.info ul{
+  padding-right: 40px;
+}
+
+.info li{
+  list-style-type: none;
+}
+
+.box input[type=submit]{
+  margin: 0 5px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  outline: none!important;
+  border: none;
+  background: 0 0;
+  color: white;
+  transition: 0.3s;
+}
+
+.box input[type=submit]:nth-child(odd){
+  background-color: #46bb52;
+}
+
+.box input[type=submit]:nth-child(odd):hover{
+  -webkit-box-shadow: 0px 0px 15px 18px rgba(33, 189, 45, 0.2);
+  -moz-box-shadow: 0px 0px 15px 18px rgba(33, 189, 45, 0.2);
+  box-shadow: 0px 0px 15px 18px rgba(33, 189, 45, 0.2);
+  background-color: #3baa47;
+}
+
+.box input[type=submit]:nth-child(even){
+  background-color: #e05959;
+}
+
+.box input[type=submit]:nth-child(even):hover{
+  -webkit-box-shadow: 0px 0px 15px 18px rgba(229, 138, 138, 0.2);
+-moz-box-shadow: 0px 0px 15px 18px rgba(229, 138, 138, 0.2);
+box-shadow: 0px 0px 15px 18px rgba(229, 138, 138, 0.2);
+background-color: #cb4c4c;
+}
+
+@media only screen and (max-width : 1050px){
+  .box{
+    width: 50%;
+  }
+}

@@ -1,0 +1,37 @@
+body{
+  opacity: 0;
+  transition: 2.3s opacity ease-in-out;
+}
+
+.body_visible {
+	opacity: 1;
+}
+
+.logo{
+  text-align: center;
+}
+
+.logo img{
+  max-height: 150px;
+}
+
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.main img{
+  max-height: 700px;
+}
+
+.main a{
+  margin: 35px 50px 0;
+  opacity: 0.7;
+  transition: 0.8s;
+}
+
+.main a:hover{
+  opacity: 1;
+}

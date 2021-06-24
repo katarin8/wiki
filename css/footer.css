@@ -1,0 +1,37 @@
+
+.site-footer .container {
+  display: flex;
+
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.copyright {
+  margin: auto 0;
+  flex-shrink: 0;
+}
+
+.site-footer .navigation-list {
+  margin-right: 15px;
+  margin-left: -15px;
+  justify-content: left;
+}
+
+.site-footer .navigation-list li {
+  list-style-type: none;
+}
+
+.site-footer .navigation-list a {
+  color:black;
+}
+
+.copyright + .navigation-list {
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.site-footer a {
+  display: block;
+  margin: 0;
+  padding: 14px 15px;
+}

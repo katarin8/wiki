@@ -1,0 +1,290 @@
+body{
+  opacity: 0;
+  transition: 2.3s opacity ease-in-out;
+}
+
+.body_visible {
+	opacity: 1;
+}
+
+h1{
+  text-align: center;
+}
+
+.account{
+  display: flex;
+  justify-content:  space-around;
+}
+
+.account h2{
+  text-align: center;
+}
+
+.my-acc{
+  font-family: 'Proxima Nova Regular';
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.my-acc a{
+  border: 0.5px #175fa8 solid;
+  padding: 7px 15px;
+  border-radius: 6px;
+  margin: 15px 0 0 0;
+  color: black;
+  font-size: 16px;
+}
+
+.my-acc a:hover{
+  background-color: #175fa8;
+  color: white;
+}
+
+.my-acc table{
+  width: 425px;
+
+}
+
+.my-acc td:nth-child(2){
+  text-align: right;
+  width: 70%;
+}
+
+.my-acc td:nth-child(1){
+  text-align: left;
+  width: 30%;
+}
+
+.my-acc td:hover{
+  font-weight: 600;
+}
+
+.my-acc tr, .my-acc td{
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.my-acc tr:nth-child(even){
+  border-bottom: 1px #d14351 solid;
+}
+
+.my-acc tr:nth-child(odd){
+  border-bottom: 1px #175fa8 solid;
+}
+
+.my-acc tr:nth-child(even):hover{
+  border-bottom: 2px #d14351 solid;
+}
+
+.my-acc tr:nth-child(odd):hover{
+  border-bottom: 2px #175fa8 solid;
+}
+
+.my-acc tr:nth-last-child(1){
+  border-bottom: none;
+}
+
+.my-acc tr:nth-last-child(1):hover{
+  border-bottom: none;
+}
+
+
+
+.my-app{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Proxima Nova Regular';
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  border: 0.5px black solid;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.box:hover{
+  border: 0.5px #d14351 solid;
+}
+
+.box img{
+  max-height: 120px;
+}
+
+.text_block{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 30px;
+
+}
+
+.text_block h3{
+    margin-block-start: 0em;
+    margin-block-end: 5px;
+}
+
+.text_block h4{
+  margin-block-start: 0em;
+  margin-block-end: 5px;
+}
+
+.text_block ul{
+    margin-block-start: 0em;
+    margin-block-end: 5px;
+    padding-inline-start: 0px;
+}
+
+.text_block li{
+  list-style-type: none;
+}
+
+.text_block input[type=submit]{
+  border-radius: 15px;
+  margin-top: 5px;
+  outline: none!important;
+  border: 1px black solid;
+  background: 0 0;
+  padding: 1px 8px;
+  font-weight: bold;
+  transition: 0.7s;
+}
+
+.text_block input[type=submit]:hover{
+  background-color: #d14351;
+  color: white;
+  border: 1px #d14351 solid;
+}
+
+.full_box{
+  display: flex;
+}
+
+.hide {
+    display: none;
+}
+.hide + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide + label {
+    margin: 10px 0 0 0;
+    border: 1px #175fa8 solid;
+    background-color: #175fa8;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    margin: 0 auto;
+    color: white;
+    background-color: #d14351;
+    border: 1px #d14351 solid;
+    width: 150px;
+    padding: 5px;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block;
+    max-width: 300px;
+    padding: 10px;
+}
+
+.hide:checked ~ img{
+    display: none;
+}
+
+
+@media only screen and (max-width : 1050px){
+  .account{
+    flex-direction: column;
+  }
+  .my-acc{
+    align-items: center;
+  }
+  .box{
+    width: 50%;
+    margin: 15px;
+  }
+  .my-app{
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.vipacc input[type = text]{
+  border: none;
+  border-bottom: 2px #175fa8 solid;
+  width: 165px;
+  outline: none !important;
+  transition: 0.7s;
+}
+
+.vipacc input[type = submit]:hover{
+  background-color: #d14351;
+  border-radius: 15px;
+}
+
+.vipacc input[type = submit]{
+  border: 1.5px #175fa8 solid;
+  border-radius: 0;
+}
+
+
+.apply{
+  color: green;
+}
+
+.checking{
+  color: red;
+}
+
+
+.edit-data{
+  text-align: center;
+  font-family: 'Proxima Nova Regular';
+  font-size: 18px;
+}
+
+.edit-data input{
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #d9d9d9;
+  text-align: center;
+}
+
+.edit-data span{
+  text-align: center;
+}
+
+.edit-data button{
+  outline: none!important;
+  border: none;
+  color: #fff;
+  padding: 15px 45px;
+  border-radius: 25px;
+  background-color: #175fa8;
+  transition: 0.5s;
+}
+
+.edit-data button:hover{
+  background-color: #d14351;
+}
+
+.sex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sex input{
+  margin-left: 20px;
+}

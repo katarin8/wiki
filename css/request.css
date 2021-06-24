@@ -1,0 +1,139 @@
+body{
+  opacity: 0;
+  transition: 2.3s opacity ease-in-out;
+}
+
+.body_visible {
+	opacity: 1;
+}
+
+.block{
+  font-family: 'Proxima Nova Regular';
+  margin-top: 50px;
+  text-align: center;
+}
+
+.block input{
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #d9d9d9;
+  width: 200px;
+  margin-top: 10px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.block h2, .block h4, .block h5{
+  margin-block-start: 0;
+  margin-block-end: 10px;
+  padding-inline-start: 0px;
+}
+
+.block h5{
+  margin-block-start: 5px;
+  margin-block-end: 0px;
+}
+
+.block textarea{
+  border: 1px #175fa8 solid;
+  border-radius: 3px;
+  padding: 10px;
+  outline: none !important;
+  margin-top: 20px;
+}
+
+.block select:focus, .block textarea:focus{
+  border: 1px #d14351 solid;
+  transition: 0.7s;
+}
+
+.block input:nth-child(odd):focus{
+  border-bottom: 2px solid #175fa8;
+  transition: 1.3s;
+}
+
+.block input:nth-child(even):focus{
+  border-bottom: 2px solid #d14351;
+  transition: 1.3s;
+}
+
+.block select{
+  border: 1px #175fa8 solid;
+}
+
+.block input[type=submit]{
+  outline: none!important;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 50px;
+  margin-top: 15px;
+  border-radius: 25px;
+  background-color: #175fa8;
+  transition: 0.5s;
+}
+
+.block input[type=submit]:hover{
+  background-color: #d14351;
+}
+
+.sel_block{
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 0 0;
+}
+
+.form-input{
+color: #555;
+height: 47px;
+}
+
+.form-input:focus::placeholder{
+  transform: translateY(-18px);
+  transition: 0.5s;
+}
+
+.sel_block input[type="date"]::before {
+   content: attr(placeholder) !important;
+   margin-right: 0.5em;
+ }
+ .sel_block input[type="date"]:focus::before,
+ .sel_block input[type="date"]:valid::before {
+   content: "";
+ }
+
+.mus, .phys{
+  padding: 5px 10px 15px;
+  text-align: сenter;
+}
+
+.mus select, .phys select, .block select{
+  width: 180px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 3px 10px;
+  outline: none !important;
+}
+
+.mus{
+  margin: 10px 10px 10px 0;
+  border-top: 1px #d14351 solid;
+  border-bottom: 1px #175fa8 solid;
+}
+
+.mus:hover{
+  border-top: 2px #d14351 solid;
+  border-bottom: 2px #175fa8 solid;
+}
+
+.phys{
+  margin: 10px 0 10px 10px;
+  border-top: 1px #175fa8 solid;
+  border-bottom: 1px #d14351 solid;
+}
+
+.phys:hover{
+  border-top: 2px #175fa8 solid;
+  border-bottom: 2px #d14351 solid;
+}

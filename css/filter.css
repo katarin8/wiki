@@ -1,0 +1,138 @@
+.all_filter{
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  margin: 25px 0;
+  font-family: 'Proxima Nova Regular';
+}
+
+.all_filter h4{
+  margin-block-start: 0em;
+  margin-block-end: 10px;
+  padding-inline-start: 0px;
+  text-align: right;
+}
+
+.filter select, .filter input[type=text], .filter input[type=number]{
+  padding: 3.5px;
+  border-radius: 10px;
+  text-decoration: none;
+  outline: none !important;
+  border: 1px #175fa8 solid;
+  margin: 0 3px;
+}
+
+.filter input[type=text], .filter input[type=number]{
+  width: 130px;
+}
+
+.filter input[placeholder]{
+  padding: 3.5px 10px;
+}
+
+.filter select:focus, .filter input[type=text]:focus, .filter input[type=number]:focus{
+  border: 1px #d14351 solid;
+  transition: 0.7s;
+}
+
+.filter input[type=submit]{
+  margin-left: 5px;
+  border: 1px #175fa8 solid;
+  background-color: #175fa8;
+  color: white;
+  border-radius: 15px;
+  padding: 5px 17px;
+}
+
+.filter input[type=submit]:hover{
+  color: white;
+  background-color: #d14351;
+  border: 1px #d14351 solid;
+  transition: 0.7s;
+}
+
+.order h4{
+  margin-block-end: 16px;
+  margin-top: 10px;
+}
+
+.order a{
+  border: 0.5px #175fa8 solid;
+  color: #175fa8;
+  padding: 6px 10px;
+  margin: 0 2px;
+}
+
+.order a:hover{
+  background-color: #175fa8;
+  color: white;
+  transition: 0.7s;
+}
+
+
+.order_form{
+font-family: 'Proxima Nova Regular';
+}
+
+.order_form select{
+  margin: 0 3.7px 10px;
+  padding: 2px 6px;
+}
+
+.order_form h2, .order_form h4, .order_form h5{
+  margin-block-start: 0em;
+  margin-block-end: 10px;
+  padding-inline-start: 0px;
+}
+
+.order_form h5{
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+.order_form input[type=text]{
+  border: none;
+  border-bottom: 2px #175fa8 solid;
+  padding: 4px;
+  width: 200px;
+  outline: none !important;
+}
+
+.order_form input[placeholder]{
+  text-align: right;
+}
+
+.order_form input[type=text]:focus{
+  border-bottom: 2px #d14351 solid;
+  transition: 0.7s;
+}
+
+.order_form select{
+  padding: 3.5px;
+  border-radius: 10px;
+  text-decoration: none;
+  outline: none !important;
+  border: 1px #175fa8 solid;
+  margin: 15px 3px;
+}
+
+.order_form textarea{
+  border: 1px #175fa8 solid;
+  border-radius: 3px;
+  padding: 10px;
+  outline: none !important;
+}
+
+.order_form select:focus, .order_form textarea:focus{
+  border: 1px #d14351 solid;
+  transition: 0.7s;
+}
+
+@media only screen and (max-width : 990px){
+  .filter input[type=submit]{
+    margin: 10px 0 5px 0;
+  }
+  .filter{
+    text-align: center;
+  }
+}
